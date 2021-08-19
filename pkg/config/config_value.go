@@ -15,9 +15,11 @@ var (
 
 // postgre config
 var (
-	Password string
-	Hostname string
-	Username string
+	Hostname      string
+	Port          int
+	Password      string
+	Username      string
+	HealthCheckId string
 )
 
 func init() {
@@ -26,7 +28,9 @@ func init() {
 	ConsoleLog = gutil.GetEnvBool("CONSOLE_LOG", true)
 	ListenAddr = gutil.GetEnvStr("LISTEN_ADDR", "0.0.0.0")
 	RemoteMode = gutil.GetEnvBool("REMOTE_MODE", true)
-	Username = gutil.GetEnvStr("USERNAME", "hzj")
-	Password = gutil.GetEnvStr("PASSWORD", "Mysql@123")
-	Hostname = gutil.GetEnvStr("HOSTNAME", "127.0.0.1:3306")
+	Hostname = gutil.GetEnvStr("HOST", "127.0.0.1")
+	Port = gutil.GetEnvInt("PORT", 5432)
+	Username = gutil.GetEnvStr("USERNAME", "sh")
+	Password = gutil.GetEnvStr("PASSWORD", "ttlovezj")
+	HealthCheckId = gutil.GetEnvStr("HOSTNAME", "default")
 }
