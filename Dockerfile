@@ -12,4 +12,9 @@ COPY docker-build /opt/sh/postgre/mate
 
 COPY --from=build /opt/sh/compile/pkg/postgre_mate /opt/sh/postgre/mate/postgre_mate
 
+RUN chown -R sh:sh /opt/sh && \
+    chown -R sh:sh /usr/pgsql-13 && \
+    chown -R sh:sh /var/run/postgresql
+
+USER sh
 CMD ["/usr/local/bin/dumb-init", "bash", "-vx", "/opt/sh/postgre/mate/scripts/start.sh"]
