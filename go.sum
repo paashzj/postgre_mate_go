@@ -25,8 +25,8 @@ github.com/mattn/go-runewidth v0.0.10 h1:CoZ3S2P7pvtP45xOtBw+/mDL2z0RKI576gSkzRR
 github.com/mattn/go-runewidth v0.0.10/go.mod h1:RAqKPSqVFrSLVXbA8x7dzmKdmGzieGRCM46jaSJTDAk=
 github.com/olekukonko/tablewriter v0.0.5 h1:P2Ga83D34wi1o9J6Wh1mRuqd4mF/x/lgBS7N7AbDhec=
 github.com/olekukonko/tablewriter v0.0.5/go.mod h1:hPp6KlRPjbx+hW8ykQs1w3UBbZlj6HuIJcUGPhkA7kY=
-github.com/paashzj/gutil v0.0.2 h1:iFejrJwkPcgBCLRTPQu0xv+Fd16W8EBlw++8Pt1glss=
-github.com/paashzj/gutil v0.0.2/go.mod h1:Zjm8SSluZmouaYbPnOnJz27fRoFkaoPJAFaqzZZ8kro=
+github.com/paashzj/gutil v0.0.8 h1:bl6wLNGhVzp/6NcsR55l/AZhp4PN5hPhG/ufWCnGkSY=
+github.com/paashzj/gutil v0.0.8/go.mod h1:UZqhzTMOgZvWNzdYZtxMMbq4CReb0jmmiuUCY6Zf1dQ=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/rivo/uniseg v0.1.0 h1:+2KBaVoUmb9XzDsrx/Ct0W/EYOSFf/nWTauy++DprtY=

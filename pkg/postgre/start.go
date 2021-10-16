@@ -2,7 +2,7 @@ package postgre
 
 import (
 	"github.com/gogf/gf/os/glog"
-	"os/exec"
+	"github.com/paashzj/gutil"
 	"postgre_mate_go/pkg/path"
 )
 
@@ -11,10 +11,10 @@ func Start() {
 }
 
 func startPostgre() {
-	command := exec.Command("/bin/bash", path.PostgreStartScript)
-	err := command.Start()
+	stdout, stderr, err := gutil.CallScript(path.PostgreStartScript)
 	if err != nil {
 		glog.Error("start postgre server failed")
 	}
-	command.Wait()
+	glog.Info("std out is ", stdout)
+	glog.Error("std err is ", stderr)
 }

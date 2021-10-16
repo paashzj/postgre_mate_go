@@ -32,5 +32,5 @@ func init() {
 	Port = gutil.GetEnvInt("PORT", 5432)
 	Username = gutil.GetEnvStr("USERNAME", "sh")
 	Password = gutil.GetEnvStr("PASSWORD", "ttlovezj")
-	HealthCheckId = gutil.GetEnvStr("HOSTNAME", "default")
+	HealthCheckId = "default"
 }

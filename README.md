@@ -10,3 +10,6 @@ ttbb
 psql -U sh -W
 ttlovezj
 ```
+```bash
+psql -U sh -d ttbb
+```
