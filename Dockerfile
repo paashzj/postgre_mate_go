@@ -8,7 +8,7 @@ FROM ttbb/postgre:nake
 
 LABEL maintainer="shoothzj@gmail.com"
 
-COPY docker-build /opt/sh/postgre/mate
+COPY --chown=sh:sh docker-build /opt/sh/postgre/mate
 
 COPY --from=build --chown=sh:sh /opt/sh/compile/pkg/postgre_mate /opt/sh/postgre/mate/postgre_mate
 
