@@ -13,4 +13,4 @@ COPY --chown=sh:sh docker-build /opt/sh/postgre/mate
 COPY --from=build --chown=sh:sh /opt/sh/compile/pkg/postgre_mate /opt/sh/postgre/mate/postgre_mate
 
 USER sh
-CMD ["/usr/local/bin/dumb-init", "bash", "-vx", "/opt/sh/postgre/mate/scripts/start.sh"]
+CMD ["/usr/bin/dumb-init", "bash", "-vx", "/opt/sh/postgre/mate/scripts/start.sh"]
